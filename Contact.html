@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div id="after_submit"></div>
+	<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+		<div class="row">
+			<label class="required" for="name">First name:</label><br />
+			<input id="fname" class="input" name="name" type="text" value="" size="30" /><br />
+			<span id="name_validation" class="error_message"></span>
+		</div>
+		<div class="row">
+			<label class="required" for="name">Last name:</label><br />
+			<input id="lname" class="input" name="name" type="text" value="" size="30" /><br />
+			<span id="name_validation" class="error_message"></span>
+		</div>
+		<div class="row">
+			<label class="required" for="number">Phone number:</label><br />
+			<input id="number" class="input" name="number" type="text" value="" size="30" /><br />
+			<span id="number_validation" class="error_message"></span>
+		</div>
+		<p>Phone number type:</p>
+		<input type="radio" id="mobile" name="type" value="mobile">
+		<label for="mobile">Mobile</label><br>
+		<input type="radio" id="landline" name="type" value="landline">
+		<label for="landline">Landline</label><br>
+		<br>
+		<div class="row">
+			<label class="required" for="email">Your email:</label><br />
+			<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+			<span id="email_validation" class="error_message"></span>
+		</div>
+		<br>
+		<div class="dropdown">
+			<button class="dropbtn">How did you hear about us:</button>
+			<div class="dropdown-content">
+				<a href="#">Search Engine</a><br>
+				<a href="#">Social Media</a><br>
+				<a href="#">Recruiter</a><br>
+  </div>
+				<p>Interest for contacting:</p>
+				<input type="checkbox" id="skill1" name="skill1" value="HTML">
+				<label for="skill1"> HTML</label><br>
+				<input type="checkbox" id="skill2" name="skill2" value="CSS">
+				<label for="skill2"> CSS</label><br>
+				<input type="checkbox" id="skill3" name="skill3" value="JavaScript">
+				<label for="skill3"> JavaScript</label><br>
+				<input type="checkbox" id="skill4" name="skill4" value="Critical Thinking">
+				<label for="skill4"> Critical Thinking</label><br>
+				<input type="checkbox" id="skill5" name="skill5" value="Analytical Thinking">
+				<label for="skill5"> Analytical Thinking</label><br>
+				<input type="checkbox" id="skill6" name="skill6" value="Teamwork">
+				<label for="skill6"> Teamwork</label><br>
+				<input type="checkbox" id="skill7" name="skill7" value="Time Management">
+				<label for="skill7"> Time Management</label><br>
+				<br>
+				<input type="submit" value="Submit">
+</div>
+
+
+				<div class="row">
+					<label class="required" for="message">Your message:</label><br />
+					<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+					<span id="message_validation" class="error_message"></span>
+				</div>
+
+				<input id="submit_button" type="submit" value="Send email" />
+</form>
+</body>
+
+</html>
